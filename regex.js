@@ -8,7 +8,7 @@ function validatePinCode(pinCode) {
 }
 
 function validateEmail(email) {
-    let emailRegex = RegExp("^[a-z0-9]+(([\\.+-_][a-z0-9]{1,})?)+@[a-z0-9]+\\.([a-z]{2,4})$");
+    let emailRegex = RegExp("^[a-z0-9]+(([\\.+-_][a-z0-9]{1,})?)+@[a-z0-9]+\\.([a-z]{2,4})+((\\.[a-z]{2})?)$");
     if (emailRegex.test(email)) {
         console.log("Valid Email!");
     } else {
@@ -27,5 +27,5 @@ validatePinCode(pinCode);
 pinCode = "400 088";
 validatePinCode(pinCode);
 
-let email = "abc.xyz@bridgelabz.co";
+let email = "abc.xyz@bridgelabz.co.in";
 validateEmail(email);
