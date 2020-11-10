@@ -11,3 +11,5 @@ let pinCode = 120987;
 validatePinCode(pinCode);
 pinCode = 012456;
 validatePinCode(pinCode);
+pinCode = "A400088";
+validatePinCode(pinCode);
