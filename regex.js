@@ -13,3 +13,5 @@ pinCode = 012456;
 validatePinCode(pinCode);
 pinCode = "A400088";
 validatePinCode(pinCode);
+pinCode = "400088B";
+validatePinCode(pinCode);
