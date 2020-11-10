@@ -7,6 +7,15 @@ function validatePinCode(pinCode) {
     }
 }
 
+function validateEmail(email) {
+    let emailRegex = RegExp('^[a-z]{3,}[@][a-z]{3,}[.][a-z]{2,3}$');
+    if (emailRegex.test(email)) {
+        console.log("Valid Email!");
+    } else {
+        console.log("Invalid Email!");
+    }
+}
+
 let pinCode = 120987;
 validatePinCode(pinCode);
 pinCode = 012456;
@@ -17,3 +26,6 @@ pinCode = "400088B";
 validatePinCode(pinCode);
 pinCode = "400 088";
 validatePinCode(pinCode);
+
+let email = "abc@bridgelabz.co";
+validateEmail(email);
