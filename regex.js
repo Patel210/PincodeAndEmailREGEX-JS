@@ -8,7 +8,7 @@ function validatePinCode(pinCode) {
 }
 
 function validateEmail(email) {
-    let emailRegex = RegExp('^[a-z]{3,}[@][a-z]{3,}[.][a-z]{2,3}$');
+    let emailRegex = RegExp('^[a-z]{3,}[@][a-z]{3,}$');
     if (emailRegex.test(email)) {
         console.log("Valid Email!");
     } else {
@@ -27,5 +27,5 @@ validatePinCode(pinCode);
 pinCode = "400 088";
 validatePinCode(pinCode);
 
-let email = "abc@bridgelabz.co";
+let email = "abc@bridgelabz";
 validateEmail(email);
